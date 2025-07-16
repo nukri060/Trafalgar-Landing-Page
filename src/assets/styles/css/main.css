@@ -57,6 +57,7 @@ header .header-wrapper .nav-part ul {
           justify-content: center;
   gap: 104px;
   padding: 20px;
+  margin-bottom: 190px;
 }
 .intro-container .intro-summary {
   margin-top: 120px;
@@ -66,7 +67,7 @@ header .header-wrapper .nav-part ul {
   font-size: 2.25rem;
   margin-bottom: 25px;
 }
-.intro-container .intro-summary .description {
+.intro-container .intro-summary .intro-description {
   margin-bottom: 48px;
   opacity: 50%;
   font-size: 1.313;
@@ -78,6 +79,100 @@ header .header-wrapper .nav-part ul {
   text-decoration: none;
   padding: 15px 40px;
   border-radius: 25px;
+  display: inline-block;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
+  transition: background-color 0.3s ease, transform 0.25s ease;
+  transition: background-color 0.3s ease, transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.intro-container .intro-summary .cta-consult:hover {
+  cursor: pointer;
+  background-color: #1e78f4;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.services-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.services-wrapper .services-summary {
+  max-width: 1000px;
+  margin: auto;
+}
+.services-wrapper .services-summary h2 {
+  margin-bottom: 61px;
+  font-size: 2.25rem;
+}
+.services-wrapper .services-summary .services-description {
+  opacity: 50%;
+  font-size: 1.125rem;
+  margin-bottom: 80px;
+}
+.services-wrapper .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+.services-wrapper .services-container .service-item {
+  max-width: 354px;
+  padding: 39px 54px;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: left;
+  -webkit-transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+.services-wrapper .services-container .service-item:hover {
+  -webkit-transform: translateY(-10px) scale(1.02);
+          transform: translateY(-10px) scale(1.02);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.services-wrapper .services-container .service-item p {
+  opacity: 50%;
+  line-height: 28px;
+}
+
+.services-overview {
+  position: relative;
+  z-index: 2;
+}
+.services-overview .background-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  gap: 120px;
+}
+.services-overview .background-elements img:first-child {
+  position: absolute;
+  top: -21px;
+}
+.services-overview .background-elements img:last-child {
+  position: absolute;
+  right: 320px;
+  bottom: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
