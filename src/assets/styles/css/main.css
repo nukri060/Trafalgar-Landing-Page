@@ -58,6 +58,22 @@ header .header-wrapper .nav-part ul {
   gap: 104px;
   padding: 20px;
   margin-bottom: 190px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.article-container img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .article-container .article-summary {
   margin-top: 120px;
@@ -70,7 +86,7 @@ header .header-wrapper .nav-part ul {
 .article-container .article-summary .article-description {
   margin-bottom: 48px;
   opacity: 50%;
-  font-size: 1.313;
+  font-size: 1.313rem;
   line-height: 32px;
 }
 
@@ -189,6 +205,104 @@ header .header-wrapper .nav-part ul {
   color: white;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.customers-feedback {
+  max-width: 1200px;
+  margin: auto;
+  padding: 64px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#5A98F2), to(#67C3F3));
+  background: linear-gradient(to top right, #5A98F2, #67C3F3);
+  color: white;
+  border-radius: 24px;
+  margin-bottom: 42px;
+}
+.customers-feedback h2 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+.customers-feedback .customers-feedback-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.customers-feedback .customers-feedback-details .customers-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.customers-feedback .customers-feedback-details .customers-data {
+  display: block;
+  text-wrap: nowrap;
+}
+.customers-feedback .customers-feedback-details .customers-data .customers-name {
+  font-size: 1.375rem;
+  line-height: 0;
+}
+.customers-feedback .customers-feedback-details .customer-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.customers-feedback .customers-feedback-details .customers-feedback-content {
+  margin-left: 111px;
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.testimonial-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 90px;
+}
+.testimonial-navigation .arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #458FF6;
+  opacity: 50%;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.2s ease;
+  transition: color 0.3s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.3s ease;
+  transition: transform 0.2s ease, color 0.3s ease, -webkit-transform 0.2s ease;
+}
+.testimonial-navigation .arrow:hover {
+  color: #458FF6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.testimonial-navigation .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+}
+.testimonial-navigation .dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 50%;
+  background-color: #458FF6;
+}
+.testimonial-navigation .dots .dot.active {
+  opacity: 100%;
 }
 
 * {
