@@ -46,7 +46,7 @@ header .header-wrapper .nav-part ul {
   font-size: 1.125rem;
 }
 
-.intro-container {
+.article-container {
   max-width: 1200px;
   margin: auto;
   display: -webkit-box;
@@ -59,37 +59,19 @@ header .header-wrapper .nav-part ul {
   padding: 20px;
   margin-bottom: 190px;
 }
-.intro-container .intro-summary {
+.article-container .article-summary {
   margin-top: 120px;
   padding: 20px;
 }
-.intro-container .intro-summary h2 {
+.article-container .article-summary .article-title {
   font-size: 2.25rem;
   margin-bottom: 25px;
 }
-.intro-container .intro-summary .intro-description {
+.article-container .article-summary .article-description {
   margin-bottom: 48px;
   opacity: 50%;
   font-size: 1.313;
   line-height: 32px;
-}
-.intro-container .intro-summary .cta-consult {
-  background-color: #458FF6;
-  color: white;
-  text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 25px;
-  display: inline-block;
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
-  transition: background-color 0.3s ease, transform 0.25s ease;
-  transition: background-color 0.3s ease, transform 0.25s ease, -webkit-transform 0.25s ease;
-}
-.intro-container .intro-summary .cta-consult:hover {
-  cursor: pointer;
-  background-color: #1e78f4;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .services-wrapper {
@@ -120,6 +102,7 @@ header .header-wrapper .nav-part ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 70px;
 }
 .services-wrapper .services-container .service-item {
   max-width: 354px;
@@ -149,6 +132,7 @@ header .header-wrapper .nav-part ul {
 .services-overview {
   position: relative;
   z-index: 2;
+  margin-bottom: 220px;
 }
 .services-overview .background-elements {
   display: -webkit-box;
@@ -173,6 +157,38 @@ header .header-wrapper .nav-part ul {
   bottom: 320px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cta-button {
+  background-color: #458FF6;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  display: inline-block;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.25s ease;
+  transition: background-color 0.3s ease, transform 0.25s ease;
+  transition: background-color 0.3s ease, transform 0.25s ease, -webkit-transform 0.25s ease;
+  border: none;
+}
+.cta-button:hover {
+  cursor: pointer;
+  background-color: #1e78f4;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cta-button--ghost {
+  background-color: transparent;
+  color: #458FF6;
+  border: 2px solid #458FF6;
+}
+.cta-button--ghost:hover {
+  background-color: #458FF6;
+  color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 * {
